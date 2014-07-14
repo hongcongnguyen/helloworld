@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maven - Documentation - OpenMRS Wiki</title>
+
+        
+
+                        
+    
+                        
+    
+                        
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE,chrome=IE7">
+<meta charset="UTF-8">
+<meta id="confluence-context-path" name="confluence-context-path" content="">
+<meta id="confluence-base-url" name="confluence-base-url" content="https://wiki.openmrs.org">
+
+<meta id="atlassian-token" name="atlassian-token" content="28d8ab7df3b6c5d0c86c87bb032569c1d7e90f42">
+
+<meta id="confluence-space-key" name="confluence-space-key" content="docs">
+<script type="text/javascript">
+        var contextPath = '';
+</script>
+
+    
+
+<!-- include system css resources -->
+
+
+    <link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/103/_/download/superbatch/css/batch.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/103/_/download/superbatch/css/batch.css?media=print" media="print">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/103/_/download/superbatch/css/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<!--[if lte IE 8]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/103/_/download/superbatch/css/batch.css?conditionalComment=lte+IE+8" media="all">
+<![endif]-->
+<!--[if lte IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/103/_/download/superbatch/css/batch.css?conditionalComment=lte+IE+9" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/1da299680492768d35d3bcbbd89fd821/_/download/contextbatch/css/atl.confluence.plugins.pagetree-desktop,main,viewcontent,atl.general/batch.css" media="all">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/1da299680492768d35d3bcbbd89fd821/_/download/contextbatch/css/atl.confluence.plugins.pagetree-desktop,main,viewcontent,atl.general/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/666079565f6bfde743273bc25e7ef987/_/download/contextbatch/css/page/batch.css" media="all">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/666079565f6bfde743273bc25e7ef987/_/download/contextbatch/css/page/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/0f23a4cc680012eeabbcaa64d622a68e/_/download/contextbatch/css/theme.doc/batch.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/2.1.4/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/2.1.4/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:sh-theme-confluence/com.atlassian.confluence.ext.newcode-macro-plugin:sh-theme-confluence.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/1.3/_/download/batch/com.atlassian.confluence.plugins.confluence-highlight-actions:highlighting-experiment-resources/com.atlassian.confluence.plugins.confluence-highlight-actions:highlighting-experiment-resources.css" media="all">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/1.3/_/download/batch/com.atlassian.confluence.plugins.confluence-highlight-actions:highlighting-experiment-resources/com.atlassian.confluence.plugins.confluence-highlight-actions:highlighting-experiment-resources.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/5.3.3-m6/_/download/batch/confluence.extra.jira:web-resources-adg/confluence.extra.jira:web-resources-adg.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/1.0.469/_/download/batch/com.atlassian.confluence.plugins.confluence-questions:create-content-resources/com.atlassian.confluence.plugins.confluence-questions:create-content-resources.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/26/_/styles/colors.css?spaceKey=docs" media="all">
+<link type="text/css" rel="stylesheet" href="/s/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/26/_/styles/custom.css?spaceKey=docs" media="all">
+
+<!-- end system css resources -->
+
+    <meta name="confluence-request-time" content="1405057382591">
+        
+    
+        
+            <meta name="ajs-is-confluence-admin" content="false">
+            <meta name="ajs-connection-timeout" content="10000">
+            <meta name="ajs-use-keyboard-shortcuts" content="true">
+            <meta name="ajs-keyboardshortcut-hash" content="90834234000508766ab86d4352b7350e">
+            <meta name="gliffy-license-type" content="OPEN_SOURCE">
+<meta name="gliffy-license-quantity" content="10000000">
+
+            <script type="text/x-template" title="gliffy-webpanel-footer">
+        <div class="gliffy-webpanel-footer"><span>This Confluence installation runs a Free Gliffy License - Evaluate the <a href="http://www.gliffy.com/products/confluence-plugin/">Gliffy Confluence Plugin</a> for your Wiki!</span></div>
+</script>
+
+
+            <meta id="team-calendars-has-jira-link" content="true">
+            <meta name="ajs-team-calendars-display-time-format" content="displayTimeFormat12">
+            <meta id="team-calendars-user-timezone" content="America/Indiana/Indianapolis">
+            <script type="text/x-template" id="team-calendars-messages" title="team-calendars-messages">
+    <fieldset class="i18n hidden">
+                    <input type="hidden" name="calendar3.month.short.april" value="Apr">
+                    <input type="hidden" name="calendar3.month.short.november" value="Nov">
+                    <input type="hidden" name="calendar3.month.long.november" value="November">
+                    <input type="hidden" name="calendar3.day.short.friday" value="Fri">
+                    <input type="hidden" name="calendar3.month.long.february" value="February">
+                    <input type="hidden" name="calendar3.month.short.february" value="Feb">
+                    <input type="hidden" name="calendar3.day.long.wednesday" value="Wednesday">
+                    <input type="hidden" name="calendar3.month.long.december" value="December">
+                    <input type="hidden" name="calendar3.day.short.sunday" value="Sun">
+                    <input type="hidden" name="calendar3.month.long.april" value="April">
+                    <input type="hidden" name="calendar3.month.long.july" value="July">
+                    <input type="hidden" name="calendar3.month.long.september" value="September">
+                    <input type="hidden" name="calendar3.month.short.august" value="Aug">
+                    <input type="hidden" name="calendar3.month.short.june" value="Jun">
+                    <input type="hidden" name="calendar3.month.short.may" value="May">
+                    <input type="hidden" name="calendar3.day.short.tuesday" value="Tue">
+                    <input type="hidden" name="calendar3.day.short.wednesday" value="Wed">
+                    <input type="hidden" name="calendar3.day.long.thursday" value="Thursday">
+                    <input type="hidden" name="calendar3.month.long.march" value="March">
+                    <input type="hidden" name="calendar3.month.long.october" value="October">
+                    <input type="hidden" name="calendar3.day.short.saturday" value="Sat">
+                    <input type="hidden" name="calendar3.month.short.january" value="Jan">
+                    <input type="hidden" name="calendar3.month.long.may" value="May">
+                    <input type="hidden" name="calendar3.month.long.january" value="January">
+                    <input type="hidden" name="calendar3.month.short.october" value="Oct">
+                    <input type="hidden" name="calendar3.day.short.thursday" value="Thu">
+                    <input type="hidden" name="calendar3.day.long.friday" value="Friday">
+                    <input type="hidden" name="calendar3.day.long.sunday" value="Sunday">
+                    <input type="hidden" name="calendar3.month.long.june" value="June">
+                    <input type="hidden" name="calendar3.month.long.august" value="August">
+                    <input type="hidden" name="calendar3.day.long.tuesday" value="Tuesday">
+                    <input type="hidden" name="calendar3.day.long.saturday" value="Saturday">
+                    <input type="hidden" name="calendar3.month.short.september" value="Sep">
+                    <input type="hidden" name="calendar3.day.long.monday" value="Monday">
+                    <input type="hidden" name="calendar3.month.short.july" value="Jul">
+                    <input type="hidden" name="calendar3.month.short.march" value="Mar">
+                    <input type="hidden" name="calendar3.day.short.monday" value="Mon">
+                    <input type="hidden" name="calendar3.month.short.december" value="Dec">
+            </fieldset>
+</script>
+
+            <meta name="ajs-public-signup-permitted" content="true">
+            
+            <meta name="ajs-cq-is-anonymous" content="true"><meta name="ajs-cq-is-admin" content="false">
+            
+            
+
+    
+            
+    
+    
+            <meta name="ajs-page-id" content="3346733">
+            <meta name="ajs-content-type" content="page">
+            <meta name="ajs-page-title" content="Maven">
+            <meta name="ajs-parent-page-title" content="Getting Started as a Developer">
+            <meta name="ajs-parent-page-id" content="589873">
+            <meta name="ajs-space-key" content="docs">
+            <meta name="ajs-space-name" content="Documentation">
+            <meta name="ajs-from-page-title" content="">
+            <meta name="ajs-can-remove-page" content="false">
+            <meta name="ajs-editor.loader.comment.resources" content="&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/2e20a076163b97b6387fca7771332682/_/download/contextbatch/css/comment-editor/batch.css&quot; media=&quot;all&quot;&gt;
+">
+            <meta name="ajs-context-path" content="">
+            <meta name="ajs-base-url" content="https://wiki.openmrs.org">
+            <meta name="ajs-version-number" content="5.4.3">
+            <meta name="ajs-build-number" content="4732">
+            <meta name="ajs-remote-user" content="">
+            <meta name="ajs-current-user-fullname" content="">
+            <meta name="ajs-current-user-avatar-url" content="">
+            <meta name="ajs-static-resource-url-prefix" content="/s/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/_">
+            <meta name="ajs-global-settings-attachment-max-size" content="10485760">
+            <meta name="ajs-user-locale" content="en_GB">
+            <meta name="ajs-enabled-dark-features" content="sync.event">
+            <meta name="ajs-atl-token" content="28d8ab7df3b6c5d0c86c87bb032569c1d7e90f42">
+            <meta name="ajs-confluence-flavour" content="VANILLA">
+            <meta name="ajs-editor.loader.resources" content="&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/aadd223bea36b0379baa6efdd28f256f/_/download/contextbatch/css/editor,macro-browser,fullpage-editor,-viewcontent,-atl.general/batch.css&quot; media=&quot;all&quot;&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/aadd223bea36b0379baa6efdd28f256f/_/download/contextbatch/css/editor,macro-browser,fullpage-editor,-viewcontent,-atl.general/batch.css?media=%28max-width%3A+1450px%29&quot; media=&quot;(max-width: 1450px)&quot;&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/aadd223bea36b0379baa6efdd28f256f/_/download/contextbatch/css/editor,macro-browser,fullpage-editor,-viewcontent,-atl.general/batch.css?media=print&quot; media=&quot;print&quot;&gt;
+&lt;!--[if lt IE 9]&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/aadd223bea36b0379baa6efdd28f256f/_/download/contextbatch/css/editor,macro-browser,fullpage-editor,-viewcontent,-atl.general/batch.css?conditionalComment=lt+IE+9&quot; media=&quot;all&quot;&gt;
+&lt;![endif]--&gt;
+&lt;!--[if IE]&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/aadd223bea36b0379baa6efdd28f256f/_/download/contextbatch/css/editor,macro-browser,fullpage-editor,-viewcontent,-atl.general/batch.css?ieonly=true&quot; media=&quot;all&quot;&gt;
+&lt;![endif]--&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/aadd223bea36b0379baa6efdd28f256f/_/download/contextbatch/js/editor,macro-browser,fullpage-editor,-viewcontent,-atl.general/batch.js&quot; &gt;&lt;/script&gt;
+">
+            <meta name="ajs-date.format" content="MMM dd, yyyy">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch/osd.action" title="OpenMRS Wiki"/>
+
+    <!-- include system javascript resources -->
+    <script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/103/_/download/superbatch/js/batch.js" ></script>
+<!--[if lte IE 8]>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/103/_/download/superbatch/js/batch.js?conditionalComment=lte+IE+8" ></script>
+<![endif]-->
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/1da299680492768d35d3bcbbd89fd821/_/download/contextbatch/js/atl.confluence.plugins.pagetree-desktop,main,viewcontent,atl.general/batch.js" ></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/666079565f6bfde743273bc25e7ef987/_/download/contextbatch/js/page/batch.js" ></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/17360ed34d1ff6ffb8d989181049cca3/_/download/contextbatch/js/atl.comments/batch.js" ></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/2.1.4/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter.js" ></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/2.1.4/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-brushes/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-brushes.js" ></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/1.3/_/download/batch/com.atlassian.confluence.plugins.confluence-highlight-actions:highlighting-experiment-resources/com.atlassian.confluence.plugins.confluence-highlight-actions:highlighting-experiment-resources.js" ></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/1.3/_/download/batch/com.atlassian.mywork.mywork-confluence-host-plugin:mw-header-anchor/com.atlassian.mywork.mywork-confluence-host-plugin:mw-header-anchor.js" ></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/1.0.469/_/download/batch/com.atlassian.confluence.plugins.confluence-questions:create-content-resources/com.atlassian.confluence.plugins.confluence-questions:create-content-resources.js" ></script>
+
+    
+
+        
+    <!-- end system javascript resources -->
+
+        
+        <script type="text/javascript" id="globalnav-script" src="https://id.openmrs.org/globalnav/js/app-optimized.js"></script>
+<meta name="google-site-verification" content="JFGfllCvsKyYljr5F4PVO9_XGOlrvfsn5DS-uJLtaAs" />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-16695719-3', 'openmrs.org');
+ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<style type="text/css">
+div#pagetreesearch {display: none; visibility: hidden;}
+</style>
+
+    
+                <link rel="canonical" href="https://wiki.openmrs.org/display/docs/Maven">
+        <link rel="shortlink" href="https://wiki.openmrs.org/x/LREz">
+    <meta name="wikilink" content="[docs:Maven]">
+    <meta name="page-version" content="25">
+
+</head>
+
+<body             onload="placeFocus()"
+     id="com-atlassian-confluence" class="theme-documentation  aui-theme-default aui-layout">
+
+        
+            
+
+
+
+
+
+    <div id="full-height-container">
+    <div id="header-precursor">
+        
+                    </div>
+
+
+
+
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation"><div class="aui-header-inner"><div class="aui-header-primary"><h1 id="logo" class="aui-header-logo aui-header-logo-custom"><a href="/"><img src="/s/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/_/images/logo/confluence-logo.png" alt="OpenMRS Wiki" /></a></h1><ul class="aui-nav">
+                            <li>
+            
+        
+        
+<a  id="space-directory-link" href="/spacedirectory/view.action"  class=" aui-nav-imagelink"   title="Spaces">
+            <span>Spaces</span>
+    </a>
+        </li>
+                    <li>
+            
+    
+        
+<a  id="people-directory-link" href="/peopledirectory.action"  class=" aui-nav-imagelink"   title="People">
+            <span>People</span>
+    </a>
+        </li>
+                    <li>
+            
+    
+        
+<a  id="confluence-questions-link" href="/questions?src=header"  class=" aui-nav-imagelink"   title="">
+            <span>Questions</span>
+    </a>
+        </li>
+                                    <li id="browseMenu" role="menu">
+            
+    
+        <a id="browse-menu-link" class="aui-nav-link aui-dropdown2-trigger" href="#" aria-haspopup="true" aria-owns="browse-menu-link-content" title="Browse">
+        <span class="browse">Browse</span>
+    </a>
+    <nav id="browse-menu-link-content" class="aui-dropdown2 aui-style-default" aria-hidden="true">
+                    <div class="aui-dropdown2-section">
+                <ul  id="browse-menu-link-leading" class="aui-list-truncate section-leading first">
+                                            <li>
+    
+            
+<a  id="space-pages-link" href="/pages/listpages.action?key=docs" class="    "      title="Browse pages in the Documentation space" >
+        Pages
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="space-blogposts-link" href="/pages/viewrecentblogposts.action?key=docs" class="    "      title="Browse blogs in the Documentation space" >
+        Blog
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="space-labels-link" href="/labels/listlabels-heatmap.action?key=docs" class="    "      title="Browse labels in the Documentation space" >
+        Labels
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="space-advanced-link" href="/spaces/viewspacesummary.action?key=docs" class="    "      title="Browse additional space functions in the Documentation space" >
+        Space Operations
+</a>
+</li>
+                                    </ul>
+            </div>
+            </nav>
+    
+        </li>
+                    <li>
+            
+    
+            
+<a  id="create-page-button" href="#"  class="aui-button aui-style aui-button-primary aui-nav-imagelink"   title="Create Content">
+            <span>Create</span>
+    </a>
+        </li>
+        </ul>
+</div><div class="aui-header-secondary"><ul class="aui-nav">
+                <li>
+        
+    
+            
+<a  id="doctheme-anchor" href="#"  class=" aui-nav-imagelink"   title="">
+            <span></span>
+    </a>
+    </li>
+        <li>
+<form id="quick-search" class="aui-quicksearch dont-default-focus header-quicksearch" action="/dosearchsite.action" method="get">
+    <fieldset>
+                        <label for="quick-search-query" class="assistive">Quick Search</label>
+        <input id="quick-search-query" class="text app-search search quick-search-query" type="text"
+               accessKey="q" autocomplete="off" name="queryString" title="Quick Search"  placeholder="Search" />
+        <input id="quick-search-submit" class="quick-search-submit" type="submit" value="Search"/>
+
+        <div class="aui-dd-parent quick-nav-drop-down"></div>
+    </fieldset>
+    <div class="hidden parameters">
+                    <!-- putMetadata failed to add value for key "quick-nav-enabled" so rendering metadata inline - see server debug log for details -->
+        <meta name="ajs-quick-nav-enabled" content="true">
+                </div>
+</form>
+</li>
+    <li>    
+        <a id="help-menu-link" class="aui-nav-link aui-dropdown2-trigger" href="#" aria-haspopup="true" aria-owns="help-menu-link-content" title="Help">
+        <span class="aui-icon aui-icon-small aui-iconfont-help">Help</span>
+    </a>
+    <nav id="help-menu-link-content" class="aui-dropdown2 aui-style-default" aria-hidden="true">
+                    <div class="aui-dropdown2-section">
+                <ul  id="help-menu-link-leading" class="aui-list-truncate section-leading first">
+                                            <li>
+    
+            
+<a  id="confluence-help-link" href="http://docs.atlassian.com/confluence/docs-54/Getting+Help+And+Support" class="    "      title="Visit the Confluence documentation home"  target="_blank"
+>
+        Online Help
+</a>
+</li>
+                                            <li>
+    
+                
+<a  id="keyboard-shortcuts-link" href="#" class="    "      title="View available keyboard shortcuts" >
+        Keyboard Shortcuts
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="feed-builder-link" href="/dashboard/configurerssfeed.action" class="    "      title="Create your custom RSS feed." >
+        Feed Builder
+</a>
+</li>
+                                            <li>
+    
+                
+<a  id="gadget-directory-link" href="#" class="   user-item administration-link "      title="Browse gadgets provided by Confluence" >
+        Available Gadgets
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="confluence-about-link" href="/aboutconfluencepage.action" class="    "      title="Get more information about Confluence" >
+        About Confluence
+</a>
+</li>
+                                    </ul>
+            </div>
+                    <div class="aui-dropdown2-section">
+                <ul  id="help-menu-link-user-profile-plugin-section" class="aui-list-truncate section-user-profile-plugin-section">
+                                            <li>
+    
+                
+<a  id="user-profile-plugin-webitem-templates-link" href="#" class="    "      title="" >
+        <style>
+	#browse-menu-link-user-profile-plugin-section,
+	.section-user-profile-plugin-section,
+	#user-profile-plugin-webitem-templates-link {
+		display: none !important;
+	}
+</style>
+
+<table>
+    <tr>
+        <td>
+            <div id="user-profile-plugin-content-container">
+				
+				    
+				
+				
+					
+												
+				            </div>
+        </td>
+    </tr>
+</table>
+
+</a>
+</li>
+                                    </ul>
+            </div>
+            </nav>
+    </li>
+    <li>    
+    </li>
+                <li>                                    <li>
+    
+            
+<a  id="login-link" href="/login.action?os_destination=%2Fdisplay%2Fdocs%2FMaven" class="   user-item login-link "      title="" >
+        Log in
+</a>
+</li>
+                        <li>
+    
+            
+<a  id="signup-link" href="/signup.action" class="   user-item signup-link "      title="" >
+        Sign Up
+</a>
+</li>
+                        </li>
+</ul>
+</div></div><!-- .aui-header-inner--></nav><!-- .aui-header -->
+    <br class="clear">
+</header>
+
+    <div id="splitter">
+    <div id="splitter-sidebar" >
+        
+        <h3><a name="Maven-WikiSpaces"></a>Wiki Spaces</h3>
+<p><a href="/display/docs"><strong>Documentation</strong></a><br/>
+<a href="/display/projects">Projects</a><br/>
+<a href="/display/RES">Resources</a><br/>
+<a href="/display/IRC">IRC Support</a><br/>
+<a href="/display/ask">Ask OpenMRS</a><br/>
+<a href="/display/archive">MediaWiki Archive</a>
+<br class="atl-forced-newline" /></p>
+
+
+<h3><a name="Maven-[Home]"></a><a href="/display/docs/Home" title="Home">Home</a></h3>
+    
+
+                    
+    
+
+
+<div class="plugin_pagetree">
+
+                        <div id="pagetreesearch">
+            <form method="POST" class="aui" action="/plugins/pagetreesearch/pagetreesearch.action" name="pagetreesearchform">
+                                    <input type="hidden" name="ancestorId" value="589848">
+                                <input type="hidden" name="spaceKey" value="docs">
+                <input type="text"  class="text medium-field" size="20" name="queryString">
+                <input type="submit" class="aui-button" value="Search">
+            </form>
+        </div>
+            
+        
+    <ul class="plugin_pagetree_children_list plugin_pagetree_children_list_noleftspace">
+        <div class="plugin_pagetree_children">
+        </div>
+    </ul>
+
+    <fieldset class="hidden">
+        <input type="hidden" name="treeId" value="">
+        <input type="hidden" name="treeRequestId" value="/plugins/pagetree/naturalchildren.action?decorator=none&amp;excerpt=false&amp;sort=position&amp;reverse=false&amp;disableLinks=false&amp;expandCurrent=false">
+        <input type="hidden" name="treePageId" value="3346733">
+
+        <input type="hidden" name="noRoot" value="false">
+        <input type="hidden" name="rootPageId" value="589848">
+
+        <input type="hidden" name="rootPage" value="">
+        <input type="hidden" name="startDepth" value="0">
+        <input type="hidden" name="spaceKey" value="docs" >
+
+        <input type="hidden" name="i18n-pagetree.loading" value="Loading...">
+        <input type="hidden" name="i18n-pagetree.error.permission" value="Unable to load page tree. It seems that you do not have permission to view the root page.">
+        <input type="hidden" name="i18n-pagetree.eeror.general" value="There was a problem retrieving the page tree. Please check the server log file for more information.">
+        <input type="hidden" name="loginUrl" value="/login.action?os_destination=%2Fpages%2Fviewpage.action%3Ftitle%3DMaven%26spaceKey%3Ddocs">
+        <input type="hidden" name="mobile" value="false">
+
+                <fieldset class="hidden">
+                                                <input type="hidden" name="ancestorId" value="589873">
+                                    <input type="hidden" name="ancestorId" value="589846">
+                                    <input type="hidden" name="ancestorId" value="589848">
+                                    </fieldset>
+    </fieldset>
+</div>
+
+
+
+            </div>
+    <div id="splitter-content">
+
+                    <script type="text/javascript" src="/s/en_GB-1988229788/4732/f543bd9a3bbc12daed85f6f5e5cba84282599932.138/5.4.3/_/download/resources/com.atlassian.confluence.plugins.doctheme:resources/doc-theme.js"></script>
+    
+                        
+            
+<div id="main"  class="aui-page-panel" >
+    <div id="main-header">
+        
+        
+    <div id="navigation" class="content-navigation view">
+                    <ul class="ajs-menu-bar">
+                                    
+                    
+        <li class="normal ajs-menu-item">
+        <a id="action-menu-link" class="action ajs-menu-title aui-dropdown2-trigger" href="#" aria-haspopup="true" aria-owns="action-menu" data-container="#navigation"><span><span>Tools</span></span></a>         <div id="action-menu" class="aui-dropdown2 aui-style-default">
+                            <ul  id="action-menu-primary"                     class="section-primary first aui-dropdown2-section">
+                                            <li>
+
+    
+        
+                            
+    
+    
+    <a  id="view-attachments-link" href="/pages/viewpageattachments.action?pageId=3346733" rel="nofollow"  class="action-view-attachments"  accessKey="t"  title="View Attachments">
+                <span>A<u>t</u>tachments (0)</span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                            
+    
+    
+    <a  id="action-view-history-link" href="/pages/viewpreviousversions.action?pageId=3346733" rel="nofollow"  class="action-view-history"   title="">
+                <span>Page History</span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                            
+    
+    
+    <a  id="action-page-permissions-link" href="/pages/viewinfo.action?pageId=3346733" rel="nofollow"  class="action-page-permissions"   title="Edit restrictions">
+                <span>Restrictions</span>    </a>
+</li>
+                                </ul>
+                            <ul  id="action-menu-secondary"                     class="section-secondary aui-dropdown2-section">
+                                            <li>
+
+    
+        
+                            
+    
+    
+    <a  id="view-page-info-link" href="/pages/viewinfo.action?pageId=3346733" rel="nofollow"  class="action-view-info"   title="">
+                <span>Page Information</span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                            
+    
+    
+    <a  id="link-to-page-link" href="/pages/viewinfo.action?pageId=3346733" rel="nofollow"  class=""   title="Link to this Page">
+                <span>Link to this Page…</span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                            
+    
+    
+    <a  id="view-in-hierarchy-link" href="/pages/listpages-dirview.action?key=docs&amp;openId=3346733#selectedPageInHierarchy" rel="nofollow"  class=""   title="">
+                <span>View in Hierarchy</span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                            
+    
+    
+    <a  id="action-view-source-link" href="/plugins/viewsource/viewpagesrc.action?pageId=3346733" rel="nofollow"  class="action-view-source popup-link"   title="">
+                <span>View Source</span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                            
+    
+    
+    <a  id="org.randombits.confluence.metadata.viewmetadata" href="/pages/metadata/viewxml.action?pageId=3346733" rel="nofollow"  class=""   title="">
+                <span>View Scaffolding XML</span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                            
+    
+    
+    <a  id="action-export-pdf-link" href="/spaces/flyingpdf/pdfpageexport.action?pageId=3346733" rel="nofollow"  class=""   title="">
+                <span>Export to PDF</span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                            
+    
+    
+    <a  id="action-export-word-link" href="/exportword?pageId=3346733" rel="nofollow"  class="action-export-word"   title="">
+                <span>Export to Word</span>    </a>
+</li>
+                                </ul>
+                    </div>
+    </li>
+            </ul>
+    </div>
+
+        
+                <div id="title-heading" class="pagetitle with-breadcrumbs">
+        
+                            <div class="space-logo " data-key="docs" data-name="Documentation" data-entity-type="confluence.space">
+            <a><img class="logo global custom" src="/download/attachments/131074/global.logo?version=6&amp;modificationDate=1394803688000&amp;api=v2" alt=""></a>
+        </div>            
+                            <div id="breadcrumb-section">
+                    
+    
+    
+    <ol id="breadcrumbs">
+                    
+                
+        <li class="first" >
+                
+
+                    <span class=""><a href="/display/docs">Documentation</a></span>
+                                                <li id="ellipsis" title="Show all breadcrumbs"><span><strong>&#8230;</strong></span></li>
+                                    
+                
+        <li class="hidden-crumb" >
+                
+
+                    <span class=""><a href="/display/docs/Home">Home</a></span>
+                                        
+                
+        <li class="hidden-crumb" >
+                
+
+                    <span class=""><a href="/display/docs/Developer+Guide">Developer Guide</a></span>
+                            
+                
+        <li>
+                
+
+                    <span class=""><a href="/display/docs/Getting+Started+as+a+Developer">Getting Started as a Developer</a></span>
+                </ol>
+
+
+                </div>
+            
+            <h1 id="title-text" class="with-breadcrumbs">
+                                        <a href="/display/docs/Maven">Maven</a>
+                            </h1>
+        </div>
+    </div>
+
+    
+
+    
+    
+    
+    
+    
+
+        
+
+
+
+
+        
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+
+
+    
+    
+        
+    
+    
+                    
+    
+
+    
+
+
+<div id="content" class="page view">
+    
+
+<div id="action-messages">
+                        </div>
+
+
+
+        <script type="text/x-template" title="searchResultsGrid">
+    <table class="aui">
+        <thead>
+            <tr class="header">
+                <th class="search-result-title">Page Title</th>
+                <th class="search-result-space">Space</th>
+                <th class="search-result-date">Updated</th>
+            </tr>
+        </thead>
+    </table>
+</script>
+<script type="text/x-template" title="searchResultsGridCount">
+    <p class="search-result-count">{0}</p>
+</script>
+<script type="text/x-template" title="searchResultsGridRow">
+    <tr class="search-result">
+        <td class="search-result-title"><a href="{1}" class="content-type-{2}"><span>{0}</span></a></td>
+        <td class="search-result-space"><a class="space" href="/display/{4}/" title="{3}">{3}</a></td>
+        <td class="search-result-date"><span class="date" title="{6}">{5}</span></td>
+    </tr>
+</script>
+        
+    
+    
+        <fieldset class="hidden parameters">
+            <input type="hidden" title="parentPageId" value="589873">
+        </fieldset>
+
+                            
+    
+
+                    
+
+        
+        <a href="#page-metadata-end" class="assistive">Skip to end of metadata</a>
+<div id="page-metadata-start" class="assistive"></div>
+
+    <div class="page-metadata">
+        <ul>
+                            <li class="page-metadata-item noprint">
+
+    
+            
+                            
+    
+    
+    <a  id="content-metadata-page-restrictions" href="#" rel="nofollow"  class="hidden"   title="Restrictions apply">
+                    <img alt="" src="/download/resources/com.atlassian.confluence.plugins.confluence-page-banner:page-banner-resources/images/red_padlock.png" height="16" width="16" title="">
+                <span></span>    </a>
+</li>
+                        <li class="page-metadata-modification-info">
+                
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'>     <a href="    /display/~confluence
+"
+                       class="url fn confluence-userlink" data-username="confluence"
+                            >OpenMRS Wiki</a></span>, last modified by <span class='editor'>     <a href="    /display/~akshika47
+"
+                       class="url fn confluence-userlink" data-username="akshika47"
+                            >Akshika Wijesundara</a></span> on <a class='last-modified' title='Feb 22, 2014 13:02' href='/pages/diffpagesbyversion.action?pageId=3346733&amp;selectedPageVersions=24&amp;selectedPageVersions=25'>Feb 22, 2014</a>
+                </li>
+        </ul>
+    </div>
+
+
+<a href="#page-metadata-start" class="assistive">Go to start of metadata</a>
+<div id="page-metadata-end" class="assistive"></div>
+
+        
+        <fieldset class="hidden parameters">
+                        <input type="hidden" title="browsePageTreeMode" value="view">
+        </fieldset>
+
+        <div class="wiki-content">
+                           
+        <h2 id="Maven-Configuration">Configuration</h2><p>These pages describes how to use the popular Maven with the most common Java IDEs</p><ul><li><a href="/display/docs/Using+the+M2Eclipse+Maven+Plugin+in+Eclipse">Using the M2Eclipse Maven Plugin in Eclipse</a></li><li><a href="/display/docs/Using+the+Maven+plugin+for+Eclipse">Using the Maven plugin for Eclipse</a></li><li><a href="/display/docs/Use+Maven+In+Intellij+IDEA">Using Maven In Intellij IDEA</a></li><li><a href="/display/docs/Using+Maven+in+Netbeans">Using Maven In Netbeans</a></li></ul><p>For groups of developers working on limited internet connections it may be worth setting up a Maven proxy to reduce the amount of traffic required for Maven development. See <a href="/display/docs/Setting+up+a+Maven+proxy+server">Setting up a Maven proxy server</a> for instructions on setting up the Nexus proxy server.</p><h2 id="Maven-CommonMavenCommands">Common Maven Commands</h2><p>List of common commands for working with the Maven OpenMRS branch: <a href="http://dev.openmrs.org/browser/openmrs/branches/maven" class="external-link" rel="nofollow">Maven Branch</a> Except for the Jetty command, all commands are expected to be run from the root of the checked out project.</p><p>Maven can be downloaded here: <a href="http://maven.apache.org/download.html" class="external-link" rel="nofollow">http://maven.apache.org/download.html</a></p><h3 id="Maven-BuildProjectandRunAllTests">Build Project and Run All Tests</h3><p>Go to the most outer project directory and run:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="theme: Confluence; brush: java; gutter: false"><![CDATA[mvn clean install
+]]></script>
+</div></div><p>It will compile, run tests, build all artifacts and install them to your local repo. Built artifacts are located in the target directory of each module (api/web/webapp)</p><p>To build the project, but skip running tests (you must run tests when building for the first time in order to create test artifacts):</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="theme: Confluence; brush: java; gutter: false"><![CDATA[mvn clean install -Dmaven.test.skip=true
+]]></script>
+</div></div><p>To run individual tests:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="theme: Confluence; brush: java; gutter: false"><![CDATA[mvn test -Dtest=Classname
+]]></script>
+</div></div><p>This will run the tests from Classname. So to run tests from ConceptTest, you need to go to api folder and type:</p><pre><p>mvn test -Dtest=ConceptTest</p></pre><h3 id="Maven-CompileandStartJettyforhotdeployment">Compile and Start Jetty for hot deployment</h3><p><span style="color: rgb(128,0,0);">Must be run from the webapp directory</span>. Starts up Jetty and deploys OpenMRS.<br /> <a href="http://archive.openmrs.org/wiki/Maven#Increasing_memory_for_Maven" class="external-link" rel="nofollow">Requires increasing memory for Maven</a></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="theme: Confluence; brush: java; gutter: false"><![CDATA[mvn jetty:run
+]]></script>
+</div></div><p>Open the Internet browser and go to <a class="external-link" href="http://localhost:8080/openmrs" rel="nofollow">http://localhost:8080/openmrs</a></p><h3 id="Maven-CompileandStartJettyforhotdeploymentwithJRebel">Compile and Start Jetty for hot deployment with JRebel</h3><p><span style="color: rgb(128,0,0);">Must be run from the webapp directory</span>. Starts up Jetty and deploys OpenMRS with <a href="http://www.zeroturnaround.com/jrebel/" class="external-link" rel="nofollow">JRebel</a> to allow on-the-fly class and web resource reloading.<br /> Warning: this does not work perfectly at the moment - please report any issues on the <a href="http://www.zeroturnaround.com/forum/forum.php?id=1" class="external-link" rel="nofollow">JRebel Support Forum</a>.<br /> <a href="http://archive.openmrs.org/wiki/Maven#Increasing_memory_for_Maven" class="external-link" rel="nofollow">Requires increasing memory for Maven</a></p><p>For working <em>only</em> with trunk, no file editing is necessary. For working with trunk and one or more module(s), please first edit webapp/pom.xml. Search for the string JRebel, and follow instructions regarding relevant modifications that must be done for working with JRebel and one or more modules.</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="theme: Confluence; brush: java; gutter: false"><![CDATA[export MAVEN_OPTS=&quot;-noverify -javaagent:PATHTOJREBELJAR/jrebel.jar&quot;
+mvn jetty:run -P jrebel
+]]></script>
+</div></div><h3 id="Maven-GenerateHTMLJunitReport">Generate HTML Junit Report</h3><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="theme: Confluence; brush: java; gutter: false"><![CDATA[mvn surefire-report:report
+]]></script>
+</div></div><p>The html output will be in: <strong>target/site/surefire-report.html</strong></p><h3 id="Maven-GenerateJavadocsinJar">Generate Javadocs in Jar</h3><p>Generates Javadoc html for each module in target/apidocs and packages to target/&lt;artifact&gt;-&lt;VERSION&gt;-javadoc.jar. For more details, see the <a href="http://maven.apache.org/plugins/maven-javadoc-plugin/usage.html" class="external-link" rel="nofollow">Maven Javadoc Plugin</a></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="theme: Confluence; brush: java; gutter: false"><![CDATA[mvn javadoc:jar
+]]></script>
+</div></div><p>Generates Javadoc html for entire project in target/apidocs and packages to target/openmrs-&lt;VERSION&gt;-javadoc.jar. For more details, see the <a href="http://maven.apache.org/plugins/maven-javadoc-plugin/usage.html" class="external-link" rel="nofollow">Maven Javadoc Plugin</a></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="theme: Confluence; brush: java; gutter: false"><![CDATA[mvn javadoc:aggregate-jar
+]]></script>
+</div></div><h3 id="Maven-BranchingandReleasing">Branching and Releasing</h3><p>Creates a branch based on trunk. Also allows incrementing trunk version to next SNAPSHOT version. For more details, see the <a href="http://maven.apache.org/plugins/maven-release-plugin/examples/branch.html" class="external-link" rel="nofollow">Maven Release Plugin</a></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="theme: Confluence; brush: java; gutter: false"><![CDATA[mvn release:branch -DbranchName= -Dusername= -Dpassword=
+]]></script>
+</div></div><h2 id="Maven-IncreasingmemoryforMaven">Increasing memory for Maven</h2><ul><li><p>In Linux: Add a file called &quot;.mavenrc&quot; to your home directory with this content:</p><div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>MAVEN_OPTS=&quot;$MAVEN_OPTS -Xms512m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=512m&quot;</pre>
+</div></div></li><li><p>In Windows: Add a new environment variable called <em>MAVEN_OPTS</em>and set it to</p><div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>-Xms512m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=512m</pre>
+</div></div></li><li><p>In Eclipse: Within the relevant Run Configuration, select the <em>JRE</em> tab and set the <em>VM Arguments</em>to</p><div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>-Xms512m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=512m</pre>
+</div></div></li></ul><p>By setting MAVEN_OPTS as an environment variable, the options specified will be applied to all Maven executions. However, this can be overridden by each project by specifying the parameters at the command line (or in the Eclipse Run Configuration).</p>
+
+                
+        
+    
+        </div>
+
+        <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+         <rdf:Description
+    rdf:about="https://wiki.openmrs.org/display/docs/Maven"
+    dc:identifier="https://wiki.openmrs.org/display/docs/Maven"
+    dc:title="Maven"
+    trackback:ping="https://wiki.openmrs.org/rpc/trackback/3346733"/>
+</rdf:RDF>
+-->
+
+            
+    
+
+
+
+<div id="labels-section" class="pageSection group">
+    <div class="labels-section-content content-column" entityid="3346733" entitytype="page">
+	<div class="labels-content">
+		
+    <ul class="label-list label-list-right ">
+            
+
+<li class="aui-label " data-label-id="4915217">
+    <a class="aui-label-split-main" href="/label/docs/cleanup">cleanup</a>
+    </li><li class="aui-label " data-label-id="20676665">
+    <a class="aui-label-split-main" href="/label/docs/maven">maven</a>
+    </li><li class="aui-label " data-label-id="8749065">
+    <a class="aui-label-split-main" href="/label/docs/repository">repository</a>
+    </li>             </ul>
+
+    </div>
+</div></div>
+
+                    <div id="children-section" class="pageSection children-showing group">
+                
+        <div class="section-header ">
+            <h2 id="children-section-title" class="section-title">
+                <a href="/display/docs/Maven?showChildren=false#children" class="children-show-hide">
+                                            10 Child Pages
+                                    </a>
+            </h2>
+
+            <a href="/display/docs/Maven?showChildren=false#children" class="children-show-hide icon"></a>
+            <!--
+            <span class="noprint grey">
+                <a class="children-subtitle" href="/pages/listpages-dirview.action?key=docs&amp;openId=3346733#selectedPageInHierarchy">Reorder Pages</a>
+                            </span>
+            -->
+        </div>
+        <div id="page-children" class="pageSectionBody children-loaded">
+                                        <span class="child-display">
+                                 <span class="icon icon-page" title="Page">Page:</span>                 <a href="/display/docs/Converting+old+code+to+Maven">Converting old code to Maven</a>
+                         </span>
+                            <span class="child-display">
+                                 <span class="icon icon-page" title="Page">Page:</span>                 <a href="/display/docs/Managing+the+Maven+Repository">Managing the Maven Repository</a>
+                         </span>
+                            <span class="child-display">
+                                 <span class="icon icon-page" title="Page">Page:</span>                 <a href="/display/docs/Setting+up+a+Maven+proxy+server">Setting up a Maven proxy server</a>
+                         </span>
+                            <span class="child-display">
+                                 <span class="icon icon-page" title="Page">Page:</span>                 <a href="/display/docs/Updating+Mavenized+modules+to+compile+against+OpenMRS+1.8.0+and+higher">Updating Mavenized modules to compile against OpenMRS 1.8.0 and higher</a>
+                         </span>
+                            <span class="child-display">
+                                 <span class="icon icon-page" title="Page">Page:</span>                 <a href="/display/docs/Usage+Poll">Usage Poll</a>
+                         </span>
+                            <span class="child-display">
+                                 <span class="icon icon-page" title="Page">Page:</span>                 <a href="/display/docs/Use+Maven+In+Intellij+IDEA">Use Maven In Intellij IDEA</a>
+                         </span>
+                            <span class="child-display">
+                                 <span class="icon icon-page" title="Page">Page:</span>                 <a href="/display/docs/Using+Maven+in+Netbeans">Using Maven in Netbeans</a>
+                         </span>
+                            <span class="child-display">
+                                 <span class="icon icon-page" title="Page">Page:</span>                 <a href="/display/docs/Using+the+M2Eclipse+Maven+Plugin+in+Eclipse">Using the M2Eclipse Maven Plugin in Eclipse</a>
+                         </span>
+                            <span class="child-display">
+                                 <span class="icon icon-page" title="Page">Page:</span>                 <a href="/display/docs/Using+the+Maven+plugin+for+Eclipse">Using the Maven plugin for Eclipse</a>
+                         </span>
+                            <span class="child-display">
+                                 <span class="icon icon-page" title="Page">Page:</span>                 <a href="/display/docs/Using+the+Module+Maven+Archetype">Using the Module Maven Archetype</a>
+                         </span>
+                                </div>
+        </div>
+    
+            
+
+
+
+
+            
+    
+
+
+
+
+
+
+
+
+                    
+    
+<div id="comments-section" class="pageSection group">
+    
+    
+    
+    
+            <div class="bottom-comment-panels comment-panels">
+                                    
+    
+
+
+    
+            </div>
+    
+    </div>
+
+
+            
+</div>
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+
+
+
+</div>
+  
+        <div id="theme-footer">
+            <p><a href="http://openmrs.org/privacy/" class="external-link" rel="nofollow">Privacy Policy</a> — <a href="http://openmrs.org/contact/" class="external-link" rel="nofollow">Contact OpenMRS</a></p>
+
+<p>Copyright © 2004-2014 OpenMRS. Unless otherwise indicated, site content is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/" class="external-link" rel="nofollow">Creative Commons Attribution 3.0 License</a>. </p>
+        </div>
+    
+    </div>
+</div>
+
+
+        
+            <div id="footer">
+
+    <section class="footer-body">
+
+                                                <p class="license license-opensource">
+                  Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to OpenMRS. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                </p>
+                        
+    
+
+    <ul id="poweredby">
+        <li class="noprint">Powered by <a href="http://www.atlassian.com/software/confluence" class="hover-footer-link">Atlassian Confluence</a> <span id='footer-build-information'>5.4.3</span>, <a href="http://www.atlassian.com/software/confluence/overview/team-collaboration-software?utm_source=confluence-footer" class="hover-footer-link">Team Collaboration Software</a></li>
+        <li class="print-only">Printed by Atlassian Confluence 5.4.3, Team Collaboration Software.</li>
+        <li class="noprint"><a href="http://jira.atlassian.com/secure/BrowseProject.jspa?id=10470" class="hover-footer-link">Report a bug</a></li>
+        <li class="noprint"><a href="http://www.atlassian.com/about/connected.jsp?s_kwcid=Confluence-stayintouch" class="hover-footer-link">Atlassian News</a></li>
+    </ul>
+
+    
+
+            
+    
+    </section>
+
+</div>
+
+            
+    </div>
+</body>
+</html>
